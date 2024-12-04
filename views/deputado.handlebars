@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="texto-principal-container">
+    <h1>Meu deputado federal 🇧🇷</h1>
+</div>
+    {{#if error}}
+        <p class="error">{{error}}</p>
+    {{/if}}
+
+    {{#if deputadoInfo}}    
+
+    <h2>{{deputadoInfo.nome}}</h2>
+    <div class="resultado-pesquisa-deputado-container">
+
+        
+
+        <div class="foto-deputado">
+            
+            <img width="160" height="200" src={{deputadoInfo.urlFoto}} alt="Foto do deputado">
+
+        </div>
+        <div class="resultado-pesquisa-deputado">
+
+            
+            <p><strong>Data de nascimento: </strong> {{deputadoInfo.dataNascimento}}</p>
+            <p><strong>Escolaridade: </strong> {{deputadoInfo.escolaridade}}</p>
+            <br>
+            <p><strong>Partido: </strong>{{deputadoInfo.partido}} - {{deputadoInfo.estado}}<p>
+            <p><strong>Condição eleitoral: </strong> {{deputadoInfo.condicaoEleitoral}}</p>
+            <p><strong>Situação: </strong> {{deputadoInfo.situacao}}</p>
+            
+
+            
+        </div>
+
+        
+        </div>
+        {{/if}}
+
+        
+
+<button class="search-button" onclick="window.history.back()">Voltar</button>
+
+
+</div>

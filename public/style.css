@@ -1,0 +1,82 @@
+:root{
+
+    --border-radius-padrao:10px;
+    --font-size-padrao:18px;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--font-size-padrao);
+    display: flex;
+    justify-content: flex-start; /* Alinha a .container à esquerda */
+    align-items: flex-start;     /* Alinha no topo */
+    
+
+}
+
+.container {
+
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin-top: 2%;
+    margin-left:2%;
+    margin-right: 56%;
+    border-radius: var(--border-radius-padrao);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+input {
+
+    width: 50%;
+    height: 30px;
+    border-radius: var(--border-radius-padrao);
+    border-color: black;
+    font-size: var(--font-size-padrao);
+    padding-left: 5px;
+
+
+}
+
+.search-button{
+    
+    width: 15%;
+    height: 38px;
+    border-radius: var(--border-radius-padrao);
+    font-size: var(--font-size-padrao);
+
+}
+
+.search-button:hover{
+    
+    cursor: pointer;
+}
+
+.resultado-pesquisa-deputado-container{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.foto-deputado{
+
+    margin-right: 50px;
+    
+
+}
+
+#video-background {
+
+    position: fixed; /* Fixa o vídeo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;     /* O vídeo ocupa toda a largura da tela */
+    height: 100%;    /* O vídeo ocupa toda a altura da tela */
+    object-fit: cover; /* Faz o vídeo cobrir toda a área, cortando se necessário */
+    z-index: -1;     /* Coloca o vídeo atrás de outros elementos */
+    filter: grayscale(100%);
+}
